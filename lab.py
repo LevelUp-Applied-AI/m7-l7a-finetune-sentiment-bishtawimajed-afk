@@ -49,7 +49,7 @@ def make_training_args(output_dir, lr=5e-5, epochs=2, batch_size=8, seed=42):
         per_device_train_batch_size=batch_size,
         per_device_eval_batch_size=batch_size,
         seed=seed,
-       eval_strategy=str("epoch"),
+        eval_strategy=str("epoch"),
         save_strategy=str("epoch"),
         logging_steps=50,
         load_best_model_at_end=True,
