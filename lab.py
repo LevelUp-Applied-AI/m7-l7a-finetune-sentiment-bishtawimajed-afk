@@ -135,8 +135,8 @@ def main():
         
     # Task 4 & 5: Predictions and CSV generation
     # Load the best model saved during training
-    model = AutoModelForSequenceClassification.from_pretrained(output_dir)
-    
+    trainer.save_model(output_dir)
+    model = trainer.model    
     # Initialize DataCollator to prevent sequence length errors during prediction
     data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
     
