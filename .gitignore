@@ -18,3 +18,9 @@ venv/
 .DS_Store
 .idea/
 .vscode/
+
+
+checkpoint-*/
+*.bin
+*.pth
+*.safetensors
