@@ -131,7 +131,8 @@ def main():
     
     # Task 2: Training
     training_args = make_training_args(output_dir)
-    trainer = train_classifier(tokenized_ds, "distilbert-base-uncased", training_args, tokenizer, num_labels=2)
+    trainer = train_classifier(tokenized_ds, "distilbert-base-uncased", training_args, tokenizer, num_labels=3)
+
     
     # Task 3: Evaluation
     metrics = evaluate_classifier(trainer, tokenized_ds["test"])
